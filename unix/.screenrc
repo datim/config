@@ -1,0 +1,22 @@
+# visual display of tabs at bottom of screen, in dark blue
+caption always "%{= kw}%-w%{= BW}%n %t%{-}%+w %-= @%H - %LD %d %LM - %c"
+
+# use '-' to access tabs 10-19, (e.g. '- 5' selects 15)
+bind - command -c select11
+bind -c select11 0 select 10
+bind -c select11 1 select 11
+bind -c select11 2 select 12
+bind -c select11 3 select 13
+bind -c select11 4 select 14
+bind -c select11 5 select 15
+bind -c select11 6 select 16
+bind -c select11 7 select 17
+bind -c select11 8 select 18
+bind -c select11 9 select 19
+
+defscrollback = 5000		# increase default scrollback size
+shell bash					# use bash by default
+
+
+# references: 
+#     https://gist.github.com/alexras/1144546
