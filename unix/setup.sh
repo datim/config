@@ -11,6 +11,6 @@ wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-pro
 # add commands to end of bash file
 GIT_PROMPT="PS1='[\u@\h \W\$(__git_ps1 \" (%s)\")]\$ '" 
 
-echo "source ${SCRIPT_PATH}/git-prompt.sh" >> ~/.bshrc
-echo ${GIT_PROMPT} >> ~/.bshrc
+echo "source ${SCRIPT_PATH}/git-prompt.sh" >> ~/.bashrc
+echo ${GIT_PROMPT} >> ~/.bashrc
 
