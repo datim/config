@@ -19,9 +19,10 @@ echo ${GIT_PROMPT} >> ${BASH_FILE}
 
 # setup config
 cp ./.vimrc ~/.vimrc
-cp ./screenrc ~/.screenrc
+cp ./.screenrc ~/.screenrc
 
 # setup alias
 cp ./alias.sh ${SCRIPT_PATH}
+echo "" >> ${BASH_FILE}
 echo "source ${SCRIPT_PATH}/alias.sh" >> ${BASH_FILE}
 
