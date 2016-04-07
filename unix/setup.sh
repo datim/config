@@ -14,3 +14,11 @@ GIT_PROMPT="PS1='[\u@\h \W\$(__git_ps1 \" (%s)\")]\$ '"
 echo "source ${SCRIPT_PATH}/git-prompt.sh" >> ~/.bashrc
 echo ${GIT_PROMPT} >> ~/.bashrc
 
+# setup config
+cp ./vimrc ~/.vimrc
+cp ./screenrc ~/.screenrc
+
+# setup alias
+cp ./alias.sh ${SCRIPT_PATH}
+echo "source ${SCRIPT_PATH}/alias.sh" >> ~/.bshrc
+
