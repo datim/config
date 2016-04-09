@@ -8,21 +8,15 @@ mkdir -p ${SCRIPT_PATH}
 # setup git repository prompt
 wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -O ${SCRIPT_PATH}/git-prompt.sh
 
-# add commands to end of bash file
-GIT_PROMPT="PS1='[\u@\h \W\$(__git_ps1 \" (%s)\")]\$ '" 
-BASH_FILE=~/.bashrc
+# setup alias
+cp ./alias.sh ${SCRIPT_PATH}
 
-echo "" >> ${BASH_FILE}
-echo "#For command line prompt display of a git branch" >> ${BASH_FILE}
-echo "source ${SCRIPT_PATH}/git-prompt.sh" >> ${BASH_FILE}
-echo ${GIT_PROMPT} >> ${BASH_FILE}
+# add commands to end of bash file
+BASH_FILE=~/.bashrc
 
 # setup config
 cp ./.vimrc ~/.vimrc
 cp ./.screenrc ~/.screenrc
 
-# setup alias
-cp ./alias.sh ${SCRIPT_PATH}
-echo "" >> ${BASH_FILE}
-echo "source ${SCRIPT_PATH}/alias.sh" >> ${BASH_FILE}
-
+# copy profile, which has additional configuration
+cp ./.profile ~/.profile
