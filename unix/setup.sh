@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # create script diretory
-SCRIPT_PATH=~/scripts
+declare -r SCRIPT_PATH=~/scripts
 echo "Creating script directory ${SCRIPT_PATH}"
 mkdir -p ${SCRIPT_PATH}
 
@@ -12,11 +12,16 @@ wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-pro
 cp ./alias.sh ${SCRIPT_PATH}
 
 # add commands to end of bash file
-BASH_FILE=~/.bashrc
+declare -r BASH_FILE=~/.bashrc
 
 # setup config
 cp ./.vimrc ~/.vimrc
 cp ./.screenrc ~/.screenrc
 
-# copy profile, which has additional configuration
-cp ./.profile ~/.profile
+# add the profile
+declare -r PROFILE_SCRIPT=bash_profile
+cp ./${PROFILE_SCRIPT} ${SCRIPT_PATH}
+
+echo "" >> ~/.bashrc
+echo "# custom configuration" >> ~/.bashrc
+echo "source ${SCRIPT_PATH}/${PROFILE_SCRIPT}" >> ~/.bashrc
