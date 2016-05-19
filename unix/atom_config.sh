@@ -13,9 +13,7 @@ apm install linter-shellcheck
 apm install linter-javac
 
 # js lint
-#apm install linter-jshint
-#apm install linter-jscs
-#apm install linter-flow
+apm install linter-eslint
 
 # python lint
 apm install linter-pylint
