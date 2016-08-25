@@ -4,4 +4,8 @@
 yum -y install \
 screen \
 java-1.8.0-openjdk-devel \
-vim 
+vim \
+wget \
+curl \
+nodejs \
+npm
