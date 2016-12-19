@@ -1,12 +1,9 @@
-# CYGWIN settings
-# Copy to ~/.minttyrc
-
 BoldAsFont=-1
 FontHeight=12
 Font=Courier New
-Transparency=low
+Transparency=high
 BackgroundColour=0,0,0
-CursorColour=220,50,47
+CursorColour=255,255,255
 Black=7,54,66
 BoldBlack=0,43,54
 Red=220,50,47
@@ -25,4 +22,6 @@ White=238,232,213
 BoldWhite=253,246,227
 OpaqueWhenFocused=no
 ForegroundColour=251,251,251
-
+Columns=134
+Rows=44
+CursorType=block
