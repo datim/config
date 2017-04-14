@@ -25,3 +25,4 @@ ForegroundColour=251,251,251
 Columns=134
 Rows=44
 CursorType=block
+BellType=0
