@@ -10,4 +10,6 @@ curl \
 nodejs \
 npm \
 meld \
-git 
+git \
+byobu \
+python
