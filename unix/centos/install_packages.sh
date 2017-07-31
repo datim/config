@@ -8,4 +8,6 @@ vim \
 wget \
 curl \
 nodejs \
-npm
+npm \
+meld \
+git 
