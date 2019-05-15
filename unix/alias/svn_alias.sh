@@ -1,4 +1,4 @@
 #!/bin/bash
-#.alias.sh
+# alias commands for subversion
 
 alias infup="svn up --set-depth infinity"
